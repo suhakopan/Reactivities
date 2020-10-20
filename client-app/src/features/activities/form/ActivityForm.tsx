@@ -95,17 +95,17 @@ const ActivityForm: React.FC<IProps> = ({ activity: initialFormState }) => {
           value={activity.venue}
         />
         <Button
+          onClick={cancelFormOpen}
+          floated="right"
+          type="button"
+          content="Cancel"
+        />
+        <Button
           loading={submitting}
           floated="right"
           positive
           type="submit"
           content="Submit"
-        />
-        <Button
-          onClick={cancelFormOpen}
-          floated="right"
-          type="button"
-          content="Cancel"
         />
       </Form>
     </Segment>
